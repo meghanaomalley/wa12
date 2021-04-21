@@ -65,7 +65,7 @@
 								"url": "https://vega.github.io/vega-datasets/data/sp500.csv"
 							},
 							"mark": "area",
-							"encoding": {
+							"encoding": { 
 								"x": {
 									"timeUnit": "yearmonth", 
 									"field": "date",
@@ -124,82 +124,17 @@
 
 				<section>
 
-					<section>
-						<h2>Visualization 2: uses some composition</h2>
-						<p>There are facets, concats, layering, or interactivity</p>
-						<p>This is <code><a href="https://github.com/vega/vega-datasets/blob/master/data/population_engineers_hurricanes.csv" target="_blank" rel="noopener noreferrer">population_engineers_hurricanes.csv</a></code> dataset:</p>
-						<div id="vis-bar"></div>
-						<script type="text/javascript">
-						var spec = {
-							"width": 600,
-							"height": 200,
-							"data": {
-								"url": "https://vega.github.io/vega-datasets/data/population_engineers_hurricanes.csv"
-							},
-							"mark": "bar",
-							"encoding": {
-								"x": {
-									"field": "state",
-									"type":"nominal",
-									"sort":"-y"
-								},
-								"y": {
-									"field": "population",
-									"type":"quantitative"
-								}
-							}
-							};
-						var opt = {"renderer": "canvas", "actions": false};
-						vegaEmbed("#vis-bar", spec, opt);
-						</script>
-					</section>
+					
+						
 
-					<section>
-						<h2>Marks: Bar</h2>
-						<p>Vega spec doc:</p>
-						<pre><code data-trim class='js' data-line-numbers=|2|5|7|9-13|10|11|12|14-17>
-							{
-							"width": 600,
-							"height": 200,
-							"data": {
-								"url": "https://vega.github.io/vega-datasets/data/population_engineers_hurricanes.csv"
-							},
-							"mark": "bar",
-							"encoding": {
-								"x": {
-									"field": "state",
-									"type":"nominal",
-									"sort":"-y"
-								},
-								"y": {
-									"field": "population",
-									"type":"quantitative"
-								}
-							}
-							};
-						</code></pre>
-						<p class="fragment">We'll see more examples of sorting data</p>
-					</section>
-
-					<section>
-						<h2>Marks: Bar</h2>
-						<p>There are more advanced capabilities like:</p>
-						<ul>
-							<li>Histograms</li>
-							<li>Stacked bar charts</li>
-							<li>Grouped bar charts</li>
-							<li>Ranged bars</li>
-						</ul>
-						<p><a href="https://vega.github.io/vega-lite/docs/bar.html">Check out the docs!</a></p>
-					</section>
-
-				</section>
+					
+				
 
 				<section>
 
 					<section>
-						<h2>Marks: Point/Circle</h2>
-						<p>Points can be used for scatter, bubble, spatial plots</p>
+						<h2>Vis 2</h2>
+						<p>Layered scatter plot</p>
 						<p>This is <code><a href="https://github.com/vega/vega-datasets/blob/master/data/sp500-2000.csv" target="_blank" rel="noopener noreferrer">sp500-2000.csv</a></code> dataset:</p>
 						<div id="vis-point"></div>
 						<script type="text/javascript">
@@ -237,49 +172,15 @@
 						</script>
 					</section>
 
-					<section>
-						<h2>Marks: Points/Circle</h2>
-						<p>Vega spec doc:</p>
-						<pre><code data-trim class='js' data-line-numbers=|5|7-10|8|9|12-15|16-19|20-27|21|22|23|24-26>
-						{
-							"width": 400,
-							"height": 300,
-							"data": {
-								"url": "https://vega.github.io/vega-datasets/data/sp500-2000.csv"
-							},
-							"mark": {
-								"type": "circle",
-								"size": 10,
-							},
-							"encoding": {
-								"x": {
-									"field": "volume",
-									"type": "quantitative"
-								},
-								"y": {
-									"field": "close",
-									"type": "quantitative"
-								},
-								"color": {
-									"field": "date",
-									"timeUnit": "year",
-									"type": "ordinal",
-									"scale": {
-										"scheme": "spectral"
-									}
-								}
-							}
-						};
-						</code></pre>
-						<p class="fragment">We'll see more examples working with scale</p>
-					</section>
+					
+				
 
 				</section>
 
 				<section>
 
 					<section>
-						<h2>Marks: Rect</h2>
+						<h2>Vis 2</h2>
 						<p>Rects can be used to make any kind of rectangle but are best known for heatmaps and 2D histograms</p>
 						<p>This is <code><a href="https://github.com/vega/vega-datasets/blob/master/data/population.json" target="_blank" rel="noopener noreferrer">population.json</a></code> dataset:</p>
 						<div id="vis-rect"></div>
