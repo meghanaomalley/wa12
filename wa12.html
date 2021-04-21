@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Week 14 Slides</title>
+		<title></title>
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reset.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reveal.min.css">
@@ -24,127 +24,42 @@
 			<div class="slides">
 				<section>
 					<h2>INFO 3402: Information Exposition</h3>
-					<p style="color:#CFB87C; font-weight:bold;">Brian Keegan & Abram Handler</p>
-					<p style="color:#565A5C">Week 14: April 12 - 16 2021</p>
+					<p style="color:#CFB87C; font-weight:bold;">WA 12</p>
+					<p style="color:#565A5C"></p>
 				</section>
-				
+					
 
 				<section>
 					<section>
-						<h2>Outline for Week 14</h3>
-						<ul>
-							<li>Previous weeks</li> 
-							<ul>
-								<li><a href="https://cuinfoscience.github.io/INFO3402-Spring2021/Week%2011/slides.html" target="_blank" rel="noopener noreferrer">Week 11</a>: Intro to Reveal.js</li>
-								<li><a href="https://cuinfoscience.github.io/INFO3402-Spring2021/Week%2012/slides.html" target="_blank" rel="noopener noreferrer">Week 12</a>: Intermediate Reveal.js + MathJax</a></li>
-								<li><a href="https://cuinfoscience.github.io/INFO3402-Spring2021/Week%2013/slides.html" target="_blank" rel="noopener noreferrer">Week 13</a>: Introductory Vega/Altair</a></li>
-							</ul>
-							<li>Customizing <a href="https://vega.github.io/">Vega</a>/<a href="https://altair-viz.github.io/index.html" target="_blank" rel="noopener noreferrer">Altair</a> plots</li>
-							<ul>
-								<li>Mon: Changing marks, encodings, types</li>
-								<li>Wed: Customizing colors, shapes, fonts</li>
-								<li>Fri: Composing facets, views, concats</li>
-								<li>Fri: Adding tooltips and interactivity</li>
-							</ul>
-							<li>Weekly Assignment 12</li>
-							<ul>
-								<li>Due Friday, April 16 by midnight</li>
-							</ul>
-						</ul>
-					</section>
-
-					<section>
-						<h2>Roadmap for rest of semester</h2>
-						<table class="reveal" style="font-size: 65%">
-							<tr>
-								<td>Week</td>
-								<td>Topic</td>
-								<td>WA deadline</td>
-							</tr>
-							<tr>
-								<td>14</td>
-								<td>Customizing Vega plots</td>
-								<td>Apr 16</td>
-							</tr>
-							<tr>
-								<td>15</td>
-								<td>Integrating data into Vega</td>
-								<td>Apr 23</td>
-							</tr>
-							<tr>
-								<td>16</td>
-								<td>Advanced Vega visualizations</td>
-								<td>Apr 30</td>
-							</tr>
-						</table>
-
-						<p>There is <b>no final exam</b> and <b>no final project</b></p>
-					</section>
-
-					<section>
-						<h2>Why so much Vega?</h2>
-						<p>Vega has a number of benefits!</p>
-						<ul>
-							<li>Free and open-source, no licensing costs like Tableau</li>
-							<li>Powerful, cross-platform, and increasingly influential</li>
-							<li>Reinforcing your web skills working with tools like JS</li>
-							<li>Using affordances of web to improve communication</li>
-							<li>Alternative to <code>pandas</code> for data transformation</li>
-						</ul>
-						<p>Show off in your capstone, final projects, portfolio, and jobs!</p>
-					</section>
-
-				</section>
-
-
-				<section>
-					<h2>Changing marks, encodings, types</h2>
-					<p>Monday</p>
-					<ul>
-						<li><a href="https://vega.github.io/vega-lite/docs/mark.html" target="_blank" rel="noopener noreferrer">Marks</a> are the basic shapes</li>
-						<li><a href="https://vega.github.io/vega-lite/docs/encoding.html" target="_blank" rel="noopener noreferrer">Encodings</a> maps data fields to shapes</li>
-						<li><a href="https://vega.github.io/vega-lite/docs/type.html" target="_blank" rel="noopener noreferrer">Types</a> define the <a href="https://en.wikipedia.org/wiki/Level_of_measurement" target="_blank" rel="noopener noreferrer">level of measurement</a></li>
-					</ul>
-				</section>
-
-				<section>
-					<section>
-						<h2>Using vega datasets</h2>
-						<p>Inspect datasets on <code>vega_datasets</code> <a href="https://github.com/vega/vega-datasets/tree/master/data" target="_blank" rel="noopener noreferrer">GitHub page</a></p>
-						<p>Option 1: From the <code>vega</code> GitHub page:</p>
+						<h2>Code Blocks</h2>
+						<p>1. Inspect datasets on <code>vega_datasets</code> <a href="https://github.com/vega/vega-datasets/tree/master/data" target="_blank" rel="noopener noreferrer">GitHub page</a></p>
+						<p>From the <code>vega</code> GitHub page:</p>
 						<pre><code data-trim class='js' data-line-numbers=2>
 							"data": {
 						    "url": "https://vega.github.io/vega-datasets/data/cars.json"
 						  },
 						</code></pre>
-						<p>Option 2: From a CDN:</p>
+						
 						<pre><code data-trim class='js' data-line-numbers=2>
-							"data": {
-						    "url": "https://cdn.jsdelivr.net/npm/vega-datasets@2/data/cars.json"
-						  },
+							
 						</code></pre>
-						<p>Week 15 will cover loading your own data into Vega, but <a href="https://vega.github.io/vega-lite/docs/data.html" target="_blank" rel="noopener noreferrer">check the docs</a> if you can't wait</p>
+						<p></p>
 					</section>
 
 				</section>
 
 				
-				<section>
-					<h2>Marks</h2>
-					<p>Marks provide the basic shapes whose position, size, color, <i>etc</i>. can be encoded from data</p>
-					<p>Currently-supported marks include: <code><a href="https://vega.github.io/vega-lite/docs/area.html" target="_blank" rel="noopener noreferrer">area</a></code>, <code><a href="https://vega.github.io/vega-lite/docs/bar.html" target="_blank" rel="noopener noreferrer">bar</a></code>, <code><a href="https://vega.github.io/vega-lite/docs/circle.html" target="_blank" rel="noopener noreferrer">circle</a></code>, <code><a href="https://vega.github.io/vega-lite/docs/line.html" target="_blank" rel="noopener noreferrer">line</a></code>, <code><a href="https://vega.github.io/vega-lite/docs/point.html" target="_blank" rel="noopener noreferrer">point</a></code>, <code><a href="https://vega.github.io/vega-lite/docs/rect.html" target="_blank" rel="noopener noreferrer">rect</a></code>, and <code><a href="https://vega.github.io/vega-lite/docs/text.html" target="_blank" rel="noopener noreferrer">text</a></code></p>
-					<p>This is not <a href="https://vega.github.io/vega-lite/docs/mark.html" target="_blank" rel="noopener noreferrer">all mark types</a>, but let's cover each of these with short examples</p>
-				</section>
+				
 
 				<section>
 					<section>
-						<h2>Marks: Area</h2>
-						<p>Area charts are useful for showing changes over time</p>
-						<p>This is the <code><a href="https://github.com/vega/vega-datasets/blob/master/data/sp500.csv" target="_blank" rel="noopener noreferrer">sp500.csv</a></code> dataset:</p>
+						<h2>Visualization 1: Customizes the appearance</h2>
+						<p>I changed the size</p>
+						<p>This is the <code><a href="https://github.com/vega/vega-datasets/blob/master/data/sp500.csv" target="_blank" rel="noopener noreferrer">sp500.csv</a></code> dataset</p>
 						<div id="vis-area"></div>
 						<script type="text/javascript">
 						var spec = {
-							"width": 300,
+							"width": 500,
 							"height": 200,
 							"data": {
 								"url": "https://vega.github.io/vega-datasets/data/sp500.csv"
@@ -170,11 +85,11 @@
 					</section>
 
 					<section>
-						<h2>Marks: Area</h2>
-						<p>Vega spec doc:</p>
+						<h2>Code Blocks</h2>
+						<p>I changed the size, making the width larger and height smaller.</p>
 						<pre><code data-trim class='js' data-line-numbers=|5|7|9-15|10|11|12-14|16-19|17|18>
 						{
-							"width": 300,
+							"width": 500,
 							"height": 200,
 							"data": {
 								"url": "https://vega.github.io/vega-datasets/data/sp500.csv"
@@ -195,20 +110,14 @@
 							}
 						};
 						</code></pre>
-						<p class="fragment">We'll see more examples of working with timeUnit</p>
+						<p class="fragment"></p>
 					</section>
 
 					<section>
-						<h2>Marks: Area</h2>
-						<p>There are more advanced capabilities like:</p>
-						<ul>
-							<li>Overlaying lines and points</li>
-							<li>Including a color gradient in the area</li>
-							<li>Stacked area charts</li>
-							<li>Streamgraphs</li>
-							<li>Ranged areas</li>
-						</ul>
-						<p><a href="https://vega.github.io/vega-lite/docs/area.html">Check out the docs!</a></p>
+						<h2>Interpretation</h2>
+						<p>This is pretty simple, one just has to change the values next to height and width. There are other ways of changing the size of other elements.</p>
+						
+						<p><a href="https://vega.github.io/vega-lite/docs/area.html">Link</a></p>
 					</section>
 
 				</section>
@@ -216,8 +125,8 @@
 				<section>
 
 					<section>
-						<h2>Marks: Bar</h2>
-						<p>Bar charts are useful for histograms, changes over time, and comparing values</p>
+						<h2>Visualization 2: uses some composition</h2>
+						<p>There are facets, concats, layering, or interactivity</p>
 						<p>This is <code><a href="https://github.com/vega/vega-datasets/blob/master/data/population_engineers_hurricanes.csv" target="_blank" rel="noopener noreferrer">population_engineers_hurricanes.csv</a></code> dataset:</p>
 						<div id="vis-bar"></div>
 						<script type="text/javascript">
